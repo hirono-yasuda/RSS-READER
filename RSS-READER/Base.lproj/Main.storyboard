@@ -17,15 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DFx-XP-aib" userLabel="Header View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFx-XP-aib" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                 <color key="backgroundColor" red="0.19607843137254902" green="0.2196078431372549" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="AuU-zT-2CR"/>
+                                </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDB-Va-ppV" userLabel="Sites Scroll View">
+                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dDB-Va-ppV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gfb-pG-gvJ"/>
+                            <constraint firstAttribute="trailing" secondItem="dDB-Va-ppV" secondAttribute="trailing" id="LK5-bT-0O9"/>
+                            <constraint firstItem="DFx-XP-aib" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QlG-i7-dzd"/>
+                            <constraint firstItem="DFx-XP-aib" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z8D-KF-rgh"/>
+                            <constraint firstItem="dDB-Va-ppV" firstAttribute="top" secondItem="DFx-XP-aib" secondAttribute="bottom" id="gxl-Ct-2Qh"/>
+                            <constraint firstAttribute="trailing" secondItem="DFx-XP-aib" secondAttribute="trailing" id="vQx-Ns-YJh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dDB-Va-ppV" secondAttribute="bottom" id="yx7-0N-Fiu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hPF-hH-x4T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="headerView" destination="DFx-XP-aib" id="e7E-gY-116"/>
+                        <outlet property="sitesScrollView" destination="dDB-Va-ppV" id="f4c-Se-Xgf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
