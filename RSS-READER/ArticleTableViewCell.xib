@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="RSS_READER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0u-v4-B5l">
+                        <rect key="frame" x="5" y="8" width="319" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="dwc-bB-FYN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本代表のＦＷ本田圭佑（２９）が、今夏に所属するＡＣミランを退団する可能性を示唆した。(日刊スポーツ)" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoD-So-E5T">
+                        <rect key="frame" x="13" y="26" width="303" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Qni-eP-Bb9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08/06/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uC-1m-u8w">
+                        <rect key="frame" x="5" y="73.5" width="319" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="y2V-nT-iT8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5uC-1m-u8w" secondAttribute="bottom" constant="6" id="4Me-xD-ADM"/>
+                    <constraint firstItem="R0u-v4-B5l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="BtH-vO-vOm"/>
+                    <constraint firstItem="R0u-v4-B5l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Kyh-wA-3AY"/>
+                    <constraint firstItem="LoD-So-E5T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="V4o-lA-bbg"/>
+                    <constraint firstAttribute="trailing" secondItem="5uC-1m-u8w" secondAttribute="trailing" constant="5" id="fS9-Ac-30u"/>
+                    <constraint firstAttribute="trailing" secondItem="R0u-v4-B5l" secondAttribute="trailing" constant="5" id="g2n-4A-GjE"/>
+                    <constraint firstItem="LoD-So-E5T" firstAttribute="top" secondItem="R0u-v4-B5l" secondAttribute="bottom" id="h0D-3n-oeh"/>
+                    <constraint firstItem="5uC-1m-u8w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="vaJ-H5-ph4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LoD-So-E5T" secondAttribute="trailing" constant="5" id="xWA-WT-g7l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="5uC-1m-u8w" id="Zdb-2i-5KA"/>
+                <outlet property="descript" destination="LoD-So-E5T" id="wac-0x-Xcf"/>
+                <outlet property="title" destination="R0u-v4-B5l" id="Ln2-FK-j8Y"/>
+            </connections>
+            <point key="canvasLocation" x="131.5" y="178.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -23,6 +23,11 @@
 		891739E81D05C414002F9F1A /* safari_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 891739DF1D05C414002F9F1A /* safari_icon.png */; };
 		891739E91D05C414002F9F1A /* twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 891739E01D05C414002F9F1A /* twitter_icon.png */; };
 		891739EA1D05C414002F9F1A /* wired_top_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 891739E11D05C414002F9F1A /* wired_top_image.png */; };
+		891D646B1D07673F00699A6F /* ArticleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D646A1D07673F00699A6F /* ArticleTableView.swift */; };
+		891D646E1D076B4600699A6F /* SiteTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D646C1D076B4600699A6F /* SiteTopTableViewCell.swift */; };
+		891D646F1D076B4600699A6F /* SiteTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 891D646D1D076B4600699A6F /* SiteTopTableViewCell.xib */; };
+		891D64731D07710200699A6F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D64711D07710200699A6F /* ArticleTableViewCell.swift */; };
+		891D64741D07710200699A6F /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 891D64721D07710200699A6F /* ArticleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		891739DF1D05C414002F9F1A /* safari_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safari_icon.png; sourceTree = "<group>"; };
 		891739E01D05C414002F9F1A /* twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_icon.png; sourceTree = "<group>"; };
 		891739E11D05C414002F9F1A /* wired_top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wired_top_image.png; sourceTree = "<group>"; };
+		891D646A1D07673F00699A6F /* ArticleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableView.swift; sourceTree = "<group>"; };
+		891D646C1D076B4600699A6F /* SiteTopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteTopTableViewCell.swift; sourceTree = "<group>"; };
+		891D646D1D076B4600699A6F /* SiteTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiteTopTableViewCell.xib; sourceTree = "<group>"; };
+		891D64711D07710200699A6F /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		891D64721D07710200699A6F /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +125,9 @@
 		891739A91D05C39E002F9F1A /* RSS-READER */ = {
 			isa = PBXGroup;
 			children = (
+				891D64751D07A63F00699A6F /* Controller */,
+				891D64701D076B8F00699A6F /* View */,
 				891739AA1D05C39E002F9F1A /* AppDelegate.swift */,
-				891739AC1D05C39E002F9F1A /* ArticleViewController.swift */,
 				891739AE1D05C39E002F9F1A /* Main.storyboard */,
 				891739B11D05C39E002F9F1A /* Assets.xcassets */,
 				891739B31D05C39E002F9F1A /* LaunchScreen.storyboard */,
@@ -158,6 +169,26 @@
 				891739E11D05C414002F9F1A /* wired_top_image.png */,
 			);
 			path = RSS_images;
+			sourceTree = "<group>";
+		};
+		891D64701D076B8F00699A6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				891D646A1D07673F00699A6F /* ArticleTableView.swift */,
+				891D646C1D076B4600699A6F /* SiteTopTableViewCell.swift */,
+				891D646D1D076B4600699A6F /* SiteTopTableViewCell.xib */,
+				891D64711D07710200699A6F /* ArticleTableViewCell.swift */,
+				891D64721D07710200699A6F /* ArticleTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		891D64751D07A63F00699A6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				891739AC1D05C39E002F9F1A /* ArticleViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +302,12 @@
 				891739E41D05C414002F9F1A /* cinra_top_image.png in Resources */,
 				891739B51D05C39E002F9F1A /* LaunchScreen.storyboard in Resources */,
 				891739E71D05C414002F9F1A /* pug.png in Resources */,
+				891D64741D07710200699A6F /* ArticleTableViewCell.xib in Resources */,
 				891739B21D05C39E002F9F1A /* Assets.xcassets in Resources */,
 				891739E21D05C414002F9F1A /* 100shiki_top_image.png in Resources */,
 				891739E81D05C414002F9F1A /* safari_icon.png in Resources */,
 				891739E51D05C414002F9F1A /* cover.png in Resources */,
+				891D646F1D076B4600699A6F /* SiteTopTableViewCell.xib in Resources */,
 				891739E61D05C414002F9F1A /* facebook_icon.png in Resources */,
 				891739EA1D05C414002F9F1A /* wired_top_image.png in Resources */,
 				891739E91D05C414002F9F1A /* twitter_icon.png in Resources */,
@@ -303,7 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891D64731D07710200699A6F /* ArticleTableViewCell.swift in Sources */,
+				891D646E1D076B4600699A6F /* SiteTopTableViewCell.swift in Sources */,
 				891739AD1D05C39E002F9F1A /* ArticleViewController.swift in Sources */,
+				891D646B1D07673F00699A6F /* ArticleTableView.swift in Sources */,
 				891739AB1D05C39E002F9F1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +565,7 @@
 				891739D11D05C39E002F9F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		891739D21D05C39E002F9F1A /* Build configuration list for PBXNativeTarget "RSS-READERTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +574,7 @@
 				891739D41D05C39E002F9F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		891739D51D05C39E002F9F1A /* Build configuration list for PBXNativeTarget "RSS-READERUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +583,7 @@
 				891739D71D05C39E002F9F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
